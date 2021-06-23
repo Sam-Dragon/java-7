@@ -16,7 +16,7 @@
    - abstract method cannot be combined with STATIC nor FINAL
 3. Variables cannot be marked as abstract
 
-Note : Never use combination such as ABSTRACT FINAL, ABSTRACT STATIC
+Note : Never use combination such as ABSTRACT FINAL, ABSTRACT STATIC, PRIVATE ABSTRACT
 
 #. To verify the access, follow the below steps
 
@@ -36,7 +36,18 @@ Note : Never use combination such as ABSTRACT FINAL, ABSTRACT STATIC
 - If the class is public abstract, then any class of different package can access it members 
 [Methods & Variables] only via inheritance not by instance
 
-# Abstract Class
 
 2. Check Member level access [Methods & Variables]
 
+# Final Class
+
+- If the method is declared as final, it cannot be overridden
+- If the variable is declared as final, it cannot be updated
+
+# Abstract Class
+
+- If the method is declared as abstract, it needs to be overridden
+- Method overridden can be optional, if the inheriting class is abstract class
+- Variables cannot be marked as abstract
+
+Rule - Method overridden of abstract class must happen when first concrete class inherits from it
