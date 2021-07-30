@@ -16,7 +16,27 @@
    - abstract method cannot be combined with STATIC nor FINAL
 3. Variables cannot be marked as abstract
 
-Note : Never use combination such as ABSTRACT FINAL, ABSTRACT STATIC, PRIVATE ABSTRACT
+1. Class cannot be marked as synchronized
+2. Methods can be marked as Synchronized 
+2. Variables cannot be marked as synchronized
+4. It can be used with any combination with access modifiers
+5. Synchronized keyword specially used w.r.t threads for concurrency problem
+
+1. Class cannot be marked as native
+2. Methods can be marked as native
+2. Variables cannot be marked as native
+4. It can be used with any combination with access modifiers except strcitfp
+5. native keyword states platform dependent code like in C
+6. method must be like abstract method
+
+1. Class can be marked as strictfp
+2. Methods can be marked as strictfp
+2. Variables cannot be marked as strictfp
+4. It can be used with any combination with access modifiers except strcitfp
+5. strictfp keyword states strict floating point IEEE standard platform 
+
+Note : Never use combination such as ABSTRACT FINAL, ABSTRACT STATIC, PRIVATE ABSTRACT,
+ABSTRACT SYNCHRONIZED, NATIVE SYNCHRONIZED
 
 #. To verify the access, follow the below steps
 
