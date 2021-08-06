@@ -1,0 +1,62 @@
+************************************ STRINGS **********************************************
+
+> Strings are nothing but array of characters [16Bit-Unicode]
+> It is a final class i.e. it cannot be inherited
+> String are immutable in java. i.e. the object cannot be modified.
+** It is always required to assign the reference else string will be lost
+> String as literal or object will be created irrespective of whether they are assigned or not
+
+# Creation 
+> It can be created as literal, which are stored in special memory called 'String constant pool'.
+It can be verified using Address check [ == ] 
+> It can be created as object, which are stored in memory called 'heap'
+
+# Methods
+> charAt(int pos) - returns the character at that position
+> toUpperCase() - returns the string in upper case
+> toLowerCase() - returns the string in lower case
+> concat(String s) - returns the string concatenated with input
+> equalsIgnoreCase(String s) - returns boolean based on string equality check
+> length() - returns the length of the string
+> replace(o, n) - returns string by replacing the character with character (OR) string with string
+> subString(int begin, int end) - returns string by taking sub string based on position
+> toString() - no use, returns string
+> trim() - returns string by replacing white spaces
+> toCharArray() - returns char[]
+
+# Don'ts
+> Never use '+' operator for appending string
+
+
+# String Buffer
+> Basically provide mutation on strings
+> Mainly used to work on multiple threads as all methods are synchronized. 
+Hence performance is low
+> It has initial capacity of 16 characters
+> Mutation occurs using methods without specifying any reference
+> Converting of string buffer to string can be done via toString()
+
+# Creation 
+> It can be created with 'new' keyword
+	- new StringBuffer();
+	- new StringBuffer(CharSequence); --> String or characters
+	- new StringBuffer(capacity); --> Change initial capacity [16] to specified one
+	- new StringBuffer(String); --> String can be passed here
+
+# Methods
+> append(Object) - concats the object at the end of the string 
+> insert(position, value) - inserts the value at the specified position
+> delete(begin, end) - deletes the value between begin and end position
+> reverse() - reverses the input
+
+# Advantages
+> Useful when large manipulation of data is required such as in file 
+
+
+# String Builder
+> Mainly used to work on single thread as all methods are not synchronized. 
+Hence performance is high
+> Rest all same as String Buffer
+
+# Creation / Methods / Advantages
+> Same as String Buffer
