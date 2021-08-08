@@ -1,15 +1,21 @@
 ************************************ STRINGS **********************************************
+> String, StringBuilder, StringBuffer belongs to java.lang package
 
-> Strings are nothing but array of characters [16Bit-Unicode]
 > It is a final class i.e. it cannot be inherited
+> It implements java.io.Serializable, Comparable<StringBuffer>, CharSequence
+> Strings are nothing but group of characters [16 bit - Unicode Character]
+> Strings are user-defined datatype
 > String are immutable in java. i.e. the object cannot be modified.
+Ex - Immutable Wrapper classes like Class, BiDecimal, Integer, Long etc...
 ** It is always required to assign the reference else string will be lost
 > String as literal or object will be created irrespective of whether they are assigned or not
 
 # Creation 
-> It can be created as literal, which are stored in special memory called 'String constant pool'.
+> It can be created as literal which is stored in special memory of heap called 'String Constant Pool'.
 It can be verified using Address check [ == ] 
 > It can be created as object, which are stored in memory called 'heap'
+> It can be created by accepting character / byte array as constructor argument of String
+> It can be created by accepting String buffer / builder as constructor argument of String
 
 # Methods
 > charAt(int pos) - returns the character at that position
@@ -23,12 +29,30 @@ It can be verified using Address check [ == ]
 > toString() - no use, returns string
 > trim() - returns string by replacing white spaces
 > toCharArray() - returns char[]
+> compareTo(String s) - compare whether two string are equal
+if s1 > s2, positive number will be returned
+if s1 < s2, negative number will be returned
+if s1 == s2, 0 will be returned 
+> compareToIgnoreCase(String s) - compare whether two string case insensitively for equality check
+> indexOf(String) - get the index of the string or char if found else return -1
+> lastIndexOf(String) - get the last index of the string or char if found else return -1
+> getChars(beginIndex, EndIndex, ArrayToCopy, BeginIndexOfArray) - Copy string to char array
+> split(String) - splits the string based on delimited or regex
 
 # Don'ts
 > Never use '+' operator for appending string
 
+# Advantage
+> Because strings are immutable, they can be shared over the network
+
+# DisAdvantage
+> It wont provide extensibility
+
 
 # String Buffer
+> It is a  final class
+> It extends AbstractStringBuilder
+> It implements java.io.Serializable, Comparable<StringBuffer>, CharSequence
 > Basically provide mutation on strings
 > Mainly used to work on multiple threads as all methods are synchronized. 
 Hence performance is low

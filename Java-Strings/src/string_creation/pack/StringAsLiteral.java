@@ -1,4 +1,4 @@
-package string_basics.pack;
+package string_creation.pack;
 
 public class StringAsLiteral {
 
