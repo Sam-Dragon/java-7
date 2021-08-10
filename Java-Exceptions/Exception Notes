@@ -1,0 +1,100 @@
+************************************** Exception Features ********************************************
+
+> Jvm also maintains the exception block from main method
+> It is jvm object which is present in java.lang
+> It is abnormal condition which alters the flow of execution
+> As a developer, we catch both compile time and runtime exception
+> parent of all exceptions and error is Throwable class
+> Exception method calls are maintained in the stack thread & it will unwind when exception occurs
+> Every main method maintains has exception handling which are handled by JVM
+
+# Exception Came from
+> JVM Exceptions
+	- Any exceptions handled by JVM i.e. NullPointerException
+> Programmatic Exceptions
+	- Any exceptions handled by programmer i.e. FileNotFoundException
+
+# Hierarchy
+							 Object
+							    |
+							Throwable (C)
+								|
+				________________|_________________
+				|								  |
+			 Error (Runtime)					  |
+			 (JVM)						 _________|_________
+			    						|					|
+			    					Checked Exception    Runtime Exception
+									(compiler)			 (Jvm)
+
+# Types
+> Checked Exception [Compile Time]
+	- The exception which are checked by the compiler at compile time
+	- Ex : FileNotException, IOException
+> Unchecked Exception [Run Time]
+	- The exception which are checked by the JVM at run time
+	- Ex : NullPointerException, ClassNotFound
+
+# Creation
+- it can be done using new keyword
+
+# Methods
+> printStackTrace() - print the stack trace for the exception
+> getMessage() - textual information about the exception
+> e - specifies the exception details
+
+# Exception Handling [Handle or Care for Checked Exceptions]
+> It can be done with keywords like try, catch & finally
+	- try {} : indicates the block where chances of exceptions is there
+	- catch(E e) { } : block specifies the actual exception details
+	- finally {} : block meant for closing of resources such as db connection closing, file closing
+> try can be followed by either by catch block or by finally or by none [try-with-resources]
+> try can be followed by multiple catch blocks but only one finally block
+> catch must catch exceptions types from lower to higher else compiler error
+> try-with-resources is special edition which is useful in closing of resources instead of finally
+such as file reader closing, scanner closing
+> try-with-resources implements AUTO-CLOSABLE interface which manages calling close() method
+
+# throw
+> It is a keyword used for exception mechanism
+> It throws only single exception, can be custom exception as well
+> throwing an exception inside try {} will be caught in catch block
+> throwing an exception inside catch / finally {} needs to be specified in method level using throws
+> It can throw 'new' exception [custom as well] or can re-throw a exception or error as well
+> Any code below throw will be unreachable code
+
+# throws [Exception Declaration]
+> It is basically ducking or passing of exception
+> It is a keyword used for exception mechanism
+> It can define multiple exceptions
+> It will be used in method level only
+> It can throw any exception compiled or runtime or even error
+
+# Re-throwing an exception
+- throwing an exception inside try {} will be caught in catch block & if same exception is thrown
+in the catch block, then it is called re-throwing an exception
+
+# Custom Exception
+- Extending to the Exception class
+- specify the constructors with arguments else we can't use them
+
+# finally block
+> It will execute even if exception is thrown or result is returned
+> finally block wont executed
+	- if system.exit(0) is called
+	- let thread sleep for very long period
+	- by making recursive call
+
+# Exception Propagation
+> It is the process of ducking the exception or passing the exception or propagating the exception
+> It can be achieved using throws clause
+> Ducking : It is a process of not handling the exception rather passing it
+
+# Exception Matching
+> It the process of finding the exact match of exception if present else relative match 
+i.e. from top to bottom catch block 
+
+# Rules
+> Don't leave catch empty
+> If user re-throw an exception, then don't use try and catch block
+> We cannot write anything between try-catch-finally blocks
