@@ -99,3 +99,4 @@ i.e. from top to bottom catch block
 > If user re-throw an exception, then don't use try and catch block
 > We cannot write anything between try-catch-finally blocks
 > Child Exception cannot be greater than parent exception. It can be equal or less than that
+> We can create multiple exceptions using ('|') symbol but exceptions must not be in hierarchy
