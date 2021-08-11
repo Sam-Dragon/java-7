@@ -1,4 +1,4 @@
-************************************** OOPS Features ********************************************
+**************************************** Polymorphism **********************************************
 
 # Polymorphism
 > It works only on instance methods
@@ -53,9 +53,6 @@ Data type of arguments
 1. Method names must be same but arguments must be vary either by number of arguments (OR) 
 (OR) by data>type of the arguments (OR) by order of the arguments
 
-> Advantages
-> Flexibility
-
 
 # Method Overriding
 > Method with same name but with different signatures
@@ -63,11 +60,10 @@ Data type of arguments
 even if you don't specify this annotation, method overriding still works
 
 > Rules [PENDING]
-1. Method signatures must have same signature else it will be become overloaded method
-2. 
-
-> Advantages
-> Flexibility
+1. Method overriding must have same signature else it will be become overloaded method
+2. Access level of child [overridden method] must be greater than or equal to parent level
+3. Checked Exception level of child [overridden method] must be less than or equal to parent level
+4. Return Type of child [overridden method] must be less than or equal to parent level 
 
 
 # Tricky 
