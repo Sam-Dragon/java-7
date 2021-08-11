@@ -51,8 +51,8 @@
 - It works only on instance methods
 - Method with same name but different signatures
 - It can be achieved by 
-	- STATIC POLYMORPHISM  --> METHOD OVERLOADING
-	- DYNAMIC POLYMORPHISM --> METHOD OVERRIDING 
+	- STATIC POLYMORPHISM  --> WITH STATIC, FINAL & PRIVATE methods
+	- DYNAMIC POLYMORPHISM --> METHOD OVERRIDING & METHOD OVERLOADING
 
 > Steps to achieve method overloading
 1. Create two methods with different arguments in same class
