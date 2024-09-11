@@ -18,6 +18,12 @@ It can be verified using Address check [ == ]
 > It can be created by accepting character / byte array as constructor argument of String
 > It can be created by accepting String buffer / builder as constructor argument of String
 
+> It can be created with 'new' keyword
+	- new String();
+	- new String(CharSequence); --> String or characters
+	- new String(String); --> String can be passed here
+	- new String(array, start_position, end_position); --> String can be passed here
+
 # Methods
 > charAt(int pos) - returns the character at that position
 > toUpperCase() - returns the string in upper case
@@ -76,7 +82,7 @@ Hence performance is low
 > append(Object) - concats the object at the end of the string 
 > insert(position, value) - inserts the value at the specified position
 > delete(begin, end) - deletes the value between begin and end position
-> reverse() - reverses the input
+**> reverse() - reverses the input
 
 # Advantages
 > Useful when large manipulation of data is required such as in file 
