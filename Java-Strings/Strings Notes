@@ -9,6 +9,7 @@
 Ex - Immutable Wrapper classes like Class, BiDecimal, Integer, Long etc...
 ** It is always required to assign the reference else string will be lost
 > String as literal or object will be created irrespective of whether they are assigned or not
+> Need reference for reflecting changed value
 
 # Creation 
 > It can be created as literal which is stored in special memory of heap called 'String Constant Pool'.
@@ -48,6 +49,10 @@ if s1 == s2, 0 will be returned
 # DisAdvantage
 > It wont provide extensibility
 
+
+## String Builder & String Buffer
+- Mainly used for mutability of strings
+- Doesnt need any reference for changed value
 
 # String Buffer
 > It is a  final class
