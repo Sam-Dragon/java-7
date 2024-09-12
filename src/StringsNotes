@@ -1,20 +1,21 @@
 ************************************ STRINGS **********************************************
 > String, StringBuilder, StringBuffer belongs to java.lang package
 
+## String
+
 > It is a final class i.e. it cannot be inherited
 > It implements java.io.Serializable, Comparable<StringBuffer>, CharSequence
-> Strings are nothing but group of characters [16 bit - Unicode Character]
+> Strings are group of characters [16 bit - Unicode Character]
 > Strings are user-defined datatype
 > String are immutable in java. i.e. the object cannot be modified.
-Ex - Immutable Wrapper classes like Class, BiDecimal, Integer, Long etc...
-** It is always required to assign the reference else string will be lost
+  Ex - Immutable Wrapper classes like Class, BiDecimal, Integer, Long etc...
 > String as literal or object will be created irrespective of whether they are assigned or not
-> Need reference for reflecting changed value
+** It is always required to assign the reference else string will be lost
 
 # Creation 
-> It can be created as literal which is stored in special memory of heap called 'String Constant Pool'.
+> It can be created as 'literal' which is stored in special memory of heap called 'String Constant Pool'.
 It can be verified using Address check [ == ] 
-> It can be created as object, which are stored in memory called 'heap'
+> It can be created as 'object', which are stored in memory called 'heap'
 > It can be created by accepting character / byte array as constructor argument of String
 > It can be created by accepting String buffer / builder as constructor argument of String
 
@@ -58,10 +59,10 @@ if s1 == s2, 0 will be returned
 
 ## String Builder & String Buffer
 - Mainly used for mutability of strings
-- Doesnt need any reference for changed value
+- Doesn't need any reference for changed value
 
-# String Buffer
-> It is a  final class
+## String Buffer
+> It is a final class
 > It extends AbstractStringBuilder
 > It implements java.io.Serializable, Comparable<StringBuffer>, CharSequence
 > Basically provide mutation on strings
@@ -79,7 +80,7 @@ Hence performance is low
 	- new StringBuffer(String); --> String can be passed here
 
 # Methods
-> append(Object) - concats the object at the end of the string 
+> append(Object) - appends the object at the end of the string
 > insert(position, value) - inserts the value at the specified position
 > delete(begin, end) - deletes the value between begin and end position
 **> reverse() - reverses the input
@@ -88,7 +89,7 @@ Hence performance is low
 > Useful when large manipulation of data is required such as in file 
 
 
-# String Builder
+## String Builder
 > Mainly used to work on single thread as all methods are not synchronized. 
 Hence performance is high
 > Rest all same as String Buffer
