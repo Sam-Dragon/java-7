@@ -1,6 +1,6 @@
 package exceptions.rethrow_exception.pack;
 
-import custom_exception.pack.CustomException;
+import exceptions.custom_exception.pack.CustomException;
 
 public class ReThrowingAnException {
 
