@@ -10,7 +10,7 @@
 - String as literal or object will be created irrespective of whether they are assigned or not <br>
 ** It is always required to assign the reference else string will be lost [Immutable nature]
 
-# Creation 
+> Creation 
 - It can be created as 'literal' which is stored in special memory of heap called 'String Constant Pool'.
 &nbsp;&nbsp;&nbsp;&nbsp; It can be verified using Address check [ == ] 
 - It can be created as 'object', which are stored in memory called 'heap'
