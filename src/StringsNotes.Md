@@ -14,7 +14,6 @@
 ** It is always required to assign the reference else string will be lost [Immutable nature]
 
 > Creation 
-
 - It can be created as 'literal' which is stored in special memory of heap called 'String Constant Pool'. <br>
 It can be verified using Address check [ == ] 
 - It can be created as 'object', which are stored in memory called 'heap'
@@ -65,7 +64,7 @@ if s1 == s2, 0 will be returned  <br>
 ## String Buffer
 - It is a final class
 - It extends AbstractStringBuilder
-- It implements java.io.Serializable, Comparable<StringBuffer-, CharSequence
+- It implements java.io.Serializable, Comparable<StringBuffer>, CharSequence
 - Basically provide mutation on strings
 - Mainly used to work on multiple threads as all methods are synchronized. 
 Hence performance is low
