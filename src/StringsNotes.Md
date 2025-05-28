@@ -11,7 +11,7 @@
 ** It is always required to assign the reference else string will be lost [Immutable nature]
 
 > Creation 
-- It can be created as 'literal' which is stored in special memory of heap called 'String Constant Pool'.
+- It can be created as 'literal' which is stored in special memory of heap called 'String Constant Pool'. <br>
 &nbsp;&nbsp;&nbsp;&nbsp; It can be verified using Address check [ == ] 
 - It can be created as 'object', which are stored in memory called 'heap'
 - It can be created by accepting character / byte array as constructor argument of String
