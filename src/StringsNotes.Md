@@ -2,7 +2,6 @@
 - Mainly used as shared data over network
 
 ## String
-
 - It is present in java.lang package
 - It is a final class i.e. it cannot be inherited
 - It implements java.io.Serializable, Comparable<StringBuffer>, CharSequence
@@ -46,6 +45,7 @@ if s1 == s2, 0 will be returned  <br>
 - lastIndexOf(String) - get the last index of the string or char if found else return -1
 - getChars(beginIndex, EndIndex, ArrayToCopy, BeginIndexOfArray) - Copy string to char array
 - split(String) - splits the string based on delimited or regex
+- intern - moves the string from heap to string constant pool
 
 > Don'ts
 - Never use '+' operator for appending string
@@ -53,7 +53,7 @@ if s1 == s2, 0 will be returned  <br>
 > Advantage
 - Because strings are immutable, they can be shared over the network
 
-> DisAdvantage
+> Disadvantage
 - It wont provide extensibility
 
 
