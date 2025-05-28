@@ -10,7 +10,7 @@
 - String are immutable in java. i.e. the object cannot be modified. <br>
   Ex - Immutable Wrapper classes like Class, BiDecimal, Integer, Long etc...
 - String as literal or object will be created irrespective of whether they are assigned or not <br>
-** It is always required to assign the reference else string will be lost [Immutable nature]
+** It is always required to assign the reference else string will be lost [**Immutable nature**]
 
 > Creation 
 - It can be created as 'literal' which is stored in special memory of heap called 'String Constant Pool'. <br>
@@ -45,7 +45,7 @@ if s1 == s2, 0 will be returned  <br>
 - lastIndexOf(String) - get the last index of the string or char if found else return -1
 - getChars(beginIndex, EndIndex, ArrayToCopy, BeginIndexOfArray) - Copy string to char array
 - split(String) - splits the string based on delimited or regex
-- intern - moves the string from heap to string constant pool
+- intern() - moves the string from heap to string constant pool
 
 > Don'ts
 - Never use '+' operator for appending string
