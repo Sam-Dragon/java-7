@@ -23,7 +23,7 @@
 	- new String(String); --- String can be passed here
 	- new String(array, start_position, end_position); --- String can be passed here
 
-# Methods
+> Methods
 - charAt(int pos) - returns the character at that position
 - toUpperCase() - returns the string in upper case
 - toLowerCase() - returns the string in lower case
@@ -35,27 +35,27 @@
 - toString() - no use, returns string
 - trim() - returns string by replacing white spaces
 - toCharArray() - returns char[]
-- compareTo(String s) - compare whether two string are equal
-if s1 - s2, positive number will be returned
-if s1 < s2, negative number will be returned
-if s1 == s2, 0 will be returned 
+- compareTo(String s) - compare whether two string are equal <br>
+if s1 - s2, positive number will be returned <br>
+if s1 < s2, negative number will be returned <br>
+if s1 == s2, 0 will be returned  <br>
 - compareToIgnoreCase(String s) - compare whether two string case insensitively for equality check
 - indexOf(String) - get the index of the string or char if found else return -1
 - lastIndexOf(String) - get the last index of the string or char if found else return -1
 - getChars(beginIndex, EndIndex, ArrayToCopy, BeginIndexOfArray) - Copy string to char array
 - split(String) - splits the string based on delimited or regex
 
-# Don'ts
+> Don'ts
 - Never use '+' operator for appending string
 
-# Advantage
+> Advantage
 - Because strings are immutable, they can be shared over the network
 
-# DisAdvantage
+> DisAdvantage
 - It wont provide extensibility
 
 
-## String Builder & String Buffer
+# String Builder & String Buffer
 - Mainly used for mutability of strings
 - Doesn't need any reference for changed value
 
