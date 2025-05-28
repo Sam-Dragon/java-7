@@ -1,8 +1,6 @@
-************************************ STRINGS **********************************************
-> String, StringBuilder, StringBuffer belongs to java.lang package
-
 ## String
 
+> It is present in java.lang package
 > It is a final class i.e. it cannot be inherited
 > It implements java.io.Serializable, Comparable<StringBuffer>, CharSequence
 > Strings are group of characters [16 bit - Unicode Character]
