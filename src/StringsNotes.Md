@@ -2,10 +2,10 @@
 
 - It is present in java.lang package
 - It is a final class i.e. it cannot be inherited
-- It implements java.io.Serializable, Comparable<StringBuffer-, CharSequence
+- It implements java.io.Serializable, Comparable<StringBuffer>, CharSequence
 - Strings are group of characters [16 bit - Unicode Character]
 - Strings are user-defined datatype
-- String are immutable in java. i.e. the object cannot be modified. <br-
+- String are immutable in java. i.e. the object cannot be modified. <br>
   Ex - Immutable Wrapper classes like Class, BiDecimal, Integer, Long etc...
 - String as literal or object will be created irrespective of whether they are assigned or not
 ** It is always required to assign the reference else string will be lost [Immutable nature]
