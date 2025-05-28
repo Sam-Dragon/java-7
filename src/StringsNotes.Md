@@ -1,3 +1,6 @@
+# String
+- Mainly used as shared data over network
+
 ## String
 
 - It is present in java.lang package
@@ -70,20 +73,20 @@ Hence performance is low
 - Mutation occurs using methods without specifying any reference
 - Converting of string buffer to string can be done via toString()
 
-# Creation 
+> Creation 
 - It can be created with 'new' keyword
 	- new StringBuffer();
 	- new StringBuffer(CharSequence); --- String or characters
 	- new StringBuffer(capacity); --- Change initial capacity [16] to specified one
 	- new StringBuffer(String); --- String can be passed here
 
-# Methods
+> Methods
 - append(Object) - appends the object at the end of the string
 - insert(position, value) - inserts the value at the specified position
 - delete(begin, end) - deletes the value between begin and end position
 **- reverse() - reverses the input
 
-# Advantages
+> Advantages
 - Useful when large manipulation of data is required such as in file 
 
 
@@ -92,5 +95,5 @@ Hence performance is low
 Hence performance is high
 - Rest all same as String Buffer
 
-# Creation / Methods / Advantages
+> Creation / Methods / Advantages
 - Same as String Buffer
