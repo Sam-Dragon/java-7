@@ -25,13 +25,13 @@ It can be verified using Address check [ == ]
 	- new String(array, start_position, end_position); --- String can be passed here
 
 > Methods
-- charAt(int pos) - returns the character at that position
+- charAt(int index) - returns the character at that position
 - toUpperCase() - returns the string in upper case
 - toLowerCase() - returns the string in lower case
 - concat(String s) - returns the string concatenated with input
 - equalsIgnoreCase(String s) - returns boolean based on string equality check
 - length() - returns the length of the string
-- replace(o, n) - returns string by replacing the character with character (OR) string with string
+- replace(String s1, String s2) - returns string by replacing the character with character (OR) string with string
 - subString(int begin, int end) - returns string by taking sub string based on position
 - toString() - no use, returns string
 - trim() - returns string by replacing white spaces
@@ -61,6 +61,7 @@ if s1 == s2, 0 will be returned  <br>
 - Mainly used for mutability of strings
 - Doesn't need any reference for changed value
 
+
 ## String Buffer
 - It is a final class
 - It extends AbstractStringBuilder
@@ -80,13 +81,20 @@ Hence performance is low
 	- new StringBuffer(String); --- String can be passed here
 
 > Methods
-- append(Object) - appends the object at the end of the string
-- insert(position, value) - inserts the value at the specified position
-- delete(begin, end) - deletes the value between begin and end position
-**- reverse() - reverses the input
+- append(String s) - appends the object at the end of the string
+- insert(index, String s) - inserts the value at the specified position
+- delete(begin_index, end_index) - deletes the value between begin and end position
+- **- reverse() ** - reverses the input
+- **- substring(begin_index) ** - reverses the input
+- **- substring(begin_index, end_index) ** - reverses the input
+- replace(begin_index, end_index, String s) - returns string by replacing the character with character (OR) string with string based on index
+- length() - returns the length of the string
+- indexOf(String s) - get the index of the string or char if found else return -1
+- lastIndexOf(String s) - get the last index of the string or char if found else return -1
+- toString() - convert string buffer to string object
 
 > Advantages
-- Useful when large manipulation of data is required such as in file 
+- Useful when large manipulation of data is required such as in file, thread-safe way
 
 
 ## String Builder
