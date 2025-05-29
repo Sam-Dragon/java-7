@@ -85,8 +85,8 @@ Hence performance is low
 - insert(index, String s) - inserts the value at the specified position
 - delete(begin_index, end_index) - deletes the value between begin and end position
 - **reverse()** - reverses the input
-- **substring(begin_index)** - reverses the input
-- **substring(begin_index, end_index)** - reverses the input
+- **substring(begin_index)** - takes the string from the specified index till the end
+- **substring(begin_index, end_index)** - takes the string from the specified beginning and ending index 
 - replace(begin_index, end_index, String s) - returns string by replacing the character with character (OR) string with string based on index
 - length() - returns the length of the string
 - indexOf(String s) - get the index of the string or char if found else return -1
