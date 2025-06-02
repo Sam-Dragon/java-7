@@ -1,5 +1,5 @@
 # Arrays
-- Mainly used as storing collection of data 
+- Mainly used for storing collection of data 
 
 ## Array
 - It is present in java.lang
