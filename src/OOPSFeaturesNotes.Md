@@ -2,7 +2,8 @@
 - Root of all class is Object class
 
 ## Encapsulation
-- Wrapping of the fields and its associated methods into a single unit
+- Wrapping of the fields and its associated methods into a single unit <br>
+Example: class
 
 > Steps to achieve it
 1. Mark the variables as private
@@ -15,28 +16,30 @@
 - Maintainability. 
 - Extensibility. Code can be extendable. i.e Validation can be added later
 - Prevents overwriting of code
-- same variables can be used in different class
+- Same variables can be used in different class
 
 
 ## Abstraction
+- It is one level above encapsulation, in simple terms it controls whats needs to be displayed
 - Hiding the implementation details 
 - It say 'What to implement' not 'how to implement'
 
 > Steps to achieve it
 - It can be achieved by INTERFACE where you must specify abstract methods
 - It can also be achieved by ABSTRACT CLASS where you must specify abstract methods
+- It can also be achieved in same class but exposing only required members through a method
 
 > Advantages
 - Caller of the class must forcibly define its own implementation
 
 
 ## Inheritance
-- Accessing the features of sub class by the super class
+- Accessing the features of one class by another
 - It can be done in two ways 'IS-A' & 'HAS-A' relationship
 
 > Steps to achieve 'IS-A' relationship 
 1. Class can only 'extend' another class
-2. Class can implement many interface
+2. Class can implement any number of interface
 3. Interface can only 'extend' another interface
 
 > Steps to achieve 'HAS-A' relationship
@@ -64,4 +67,5 @@
 3. Sub Class must be override the Super class method
 
 > Advantages
-- Re-usability, Flexibility
+- Re-usability
+- Flexibility
