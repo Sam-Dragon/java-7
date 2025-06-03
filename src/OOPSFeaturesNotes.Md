@@ -1,7 +1,7 @@
-************************************** OOPS Features ********************************************
+# OOPS Features 
 - Root of all class is Object class
 
-# Encapsulation
+## Encapsulation
 - Wrapping of the fields and its associated methods into a single unit
 
 > Steps to achieve it
@@ -18,7 +18,19 @@
 - same variables can be used in different class
 
 
-# Inheritance
+## Abstraction
+- Hiding the implementation details 
+- It say 'What to implement' not 'how to implement'
+
+> Steps to achieve it
+- It can be achieved by INTERFACE where you must specify abstract methods
+- It can also be achieved by ABSTRACT CLASS where you must specify abstract methods
+
+> Advantages
+- Caller of the class must forcibly define its own implementation
+
+
+## Inheritance
 - Accessing the features of sub class by the super class
 - It can be done in two ways 'IS-A' & 'HAS-A' relationship
 
@@ -35,19 +47,7 @@
 - Polymorphism
 
 
-# Abstraction
-- Hiding the implementation details 
-- It say 'What to implement' not 'how to implement'
-
-> Steps to achieve it
-- It can be achieved by INTERFACE where you must specify abstract methods
-- It can also be achieved by ABSTRACT CLASS where you must specify abstract methods
-
-> Advantages
-- Caller of the class must forcibly define its own implementation
-
-
-# Polymorphism
+## Polymorphism
 - It works only on instance methods
 - Method with same name but different signatures
 - It can be achieved by 
