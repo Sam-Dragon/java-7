@@ -40,20 +40,20 @@
 	BufferedReader reader = BufferedReader(new InputStreamReader(System.in)); <br>
 	Integer integer = Integer.parseInt(reader.readLine()); <br>
 		
-> Problem While accepting the input due to 'read()' method
+> **Problem** While accepting the input due to 'read()' method
 - This issue occurs if the read() method is followed by readLine() method
 - As read() method accepts single character but when we hit enter, new line character (\n) is passed
 which will be input to the readLine() & hence readLine() wont accept any other input
 
-1. Solution : use bufferedReader.readLine().charAt(0)
-- This solution is effective as we will pick the required number of character and skip others
+	> Solution 1 :
+ 	- use bufferedReader.readLine().charAt(0)
+	- This solution is effective as we will pick the required number of character and skip others <br><br>
 
-2. Solution : use bufferedReader.skip(2)
-- It is not effective as if extra character is entered it screws up
+	> Solution 2 :
+  	- use bufferedReader.skip(2)
+	- It is not effective as if extra character is entered it screws up
 
 ## String Tokenizer
-
-> Accepting Different types of inputs
 - StringTokenizer class is used for splitting the string into small pieces called tokens
 - It splits the string based on the delimiter
 
@@ -70,21 +70,23 @@ which will be input to the readLine() & hence readLine() wont accept any other i
 - It internally uses StringTokenizer for splitting the input & it splits by white space
 - It needs to be enclosed in try-with-resources
 
-> Problem While accepting the input due to 'scanner.next()' method
+> **Problem** While accepting the input due to 'scanner.next()' method
 - This issue occurs if the scanner.next() method is followed by any other method
 - As next() method accepts single string but when we hit enter, rest of the string will be passed
 to the next input string which will cause issue
 
-1. Solution : use scanner.next() with bufferedReader.nextLine() 
-- This solution is effective as we will pick the string till end the line
+	> Solution
+	- use scanner.next() with bufferedReader.nextLine() 
+	- This solution is effective as we will pick the string till end the line
 
-> Problem While accepting the input with 'scanner.nextLine().charAt(0)' method
+> **Problem** While accepting the input with 'scanner.nextLine().charAt(0)' method
 - This issue occurs if the scanner.nextLine().charAt(0) method is lead by any other method
 - So if any scanner method is called before nextLine(). nextLine() accepts input as new line (\n)
 which will result in error
 
-1. Solution : use scanner.next().charAt(0)
-- Ensure don't use scanner.nextLine().charAt(0) with scanner.next().charAt(0)
+	> Solution
+	- use scanner.next().charAt(0)
+	- Ensure don't use scanner.nextLine().charAt(0) with scanner.next().charAt(0)
 
 
 # Display output with printf()
