@@ -69,7 +69,7 @@ even if you don't specify this annotation, method overriding still works
 
 
 ## Tricky 
-> If the wrapper class is used in method with single arguments like Integer, Long etc.. 
+- If the wrapper class is used in method with single arguments like Integer, Long etc.. 
 then passing null to argument result in compiler error because null is common for wrapper class
-> Method accepting double arguments can be passed with direct values without specifying any type 
+- Method accepting double arguments can be passed with direct values without specifying any type 
 like 0D, 0d still it works unless there is no method accepting integer argument
