@@ -10,7 +10,7 @@
 - Method to execute is known to compiler at compile time
 - It can be achieved by using method overloading
 
-## Method Overloading
+> Method Overloading
 - Method with same name but with different arguments
 - Difference in arguments could be based on Number of arguments, Order of arguments (OR)
 Data type of arguments
@@ -56,7 +56,7 @@ as parent method is public, & child method is final, depending on object method 
 > Advantages
 - Re-usability, Flexibility
 
-## Method Overriding
+> Method Overriding
 - Method with same name but with different signatures
 - @Override is marker annotation which ensures the overridden method signature is same
 even if you don't specify this annotation, method overriding still works
