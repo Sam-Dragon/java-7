@@ -40,7 +40,7 @@ as parent method is private, then only child method can be executed.
 ## Polymorphism with FINAL METHODS 
 - If classes defines methods final in nature, compiler knows which method to execute
 as parent method is public, & child method is final, depending on object method will execute.
-- It is applicable if the method is overloaded
+- It is applicable if the method is overloaded <br><br>
 
 
 ## DYNAMIC POLYMORPHISM [DYNAMIC BINDING]
