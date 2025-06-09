@@ -19,7 +19,7 @@ Data type of arguments
  
 > Rules
 1. Method names must be same but arguments must be vary either by number of arguments (OR) 
-(OR) by datatype of the arguments (OR) by order of the arguments
+by datatype of the arguments (OR) by order of the arguments
 
 > Steps to achieve method overloading
 1. Create two methods with different arguments in same class
