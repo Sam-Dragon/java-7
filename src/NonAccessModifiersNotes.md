@@ -89,3 +89,9 @@ ABSTRACT SYNCHRONIZED, NATIVE SYNCHRONIZED
 
 > Abstract Variables
 - Variables cannot be marked as abstract
+
+# Inner Class
+- It is always used inside another class
+- It will be represented as 'this$0' if one inner class is defined
+- To access inner class variables, methods we can you 'this.'
+- To access current class variables, methods we can you 'classname.this'
