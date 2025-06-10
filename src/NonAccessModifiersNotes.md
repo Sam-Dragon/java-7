@@ -95,3 +95,4 @@ ABSTRACT SYNCHRONIZED, NATIVE SYNCHRONIZED
 - It will be represented as 'this$0' if one inner class is defined
 - To access inner class variables, methods we can you 'this.'
 - To access current class variables, methods we can you 'classname.this'
+- Inner class are useful, when we want specific guys to update
