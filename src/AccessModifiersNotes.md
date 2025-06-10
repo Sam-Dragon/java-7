@@ -1,4 +1,4 @@
-# Points to Remember
+# Access Modifiers
 
 1. Class can be public, default but not  private, protected
 2. Method & Variables can be of any access
@@ -61,3 +61,7 @@ can access it members [Methods & Variables] either by instance or via inheritanc
 - If the class is default and members are protected, then any class of same package
 can access it members [Methods & Variables] either by instance or via inheritance 
 [** Different package cannot access members]
+
+
+# Private Class
+- We cannot make any class directly as 'private' but it is possible while using inner classes
