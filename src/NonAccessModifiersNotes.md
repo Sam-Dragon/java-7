@@ -96,3 +96,8 @@ ABSTRACT SYNCHRONIZED, NATIVE SYNCHRONIZED
 - To access inner class variables, methods we can you 'this.'
 - To access current class variables, methods we can you 'classname.this'
 - Inner class are useful, when we want specific guys to update
+- It will defined similar to class
+
+# Anonymous Inner Class
+- It doesnt have any name
+- It is created along with other class instantiation
