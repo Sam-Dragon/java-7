@@ -11,6 +11,3 @@
 > Members classified
 - Access Modifiers     - public, protected, private, default
 - Non Access Modifiers - abstract, final, static, strictp
-
-
-- 
