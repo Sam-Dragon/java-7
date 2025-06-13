@@ -1,6 +1,6 @@
 # Class
 
-## Class 
+> Definition 
 - It is template used for representing the object. It contains members [variables, methods] and constructors
 - It is blueprint of the object
 - For access modifiers, parent classes can be marked public and default but not protected and private
@@ -12,16 +12,20 @@
 - Access Modifiers     - public, protected, private, default
 - Non Access Modifiers - abstract, final, static, strictp
 
+<br>
+
 # Access Modifiers
 - It is applicable on class, methods, variables and **constructor**
 
 ## Public Class
+- If the class is marked as public, it is accessible within and outside the package
 
+> Rule [Members]
 - If the class is public and members are public, then any class of same or different package can 
 access it members [Methods & Variables] either by instance or via inheritance
 
 - If the class is public and members are private, then any class of same or different package 
-cannot access it members [Methods & Variables] either by instance or via inheritance
+cannot access it members [Methods & Variables] neither by instance nor via inheritance
 
 - If the class is public and members are default, then any class of same package
 can access it members [Methods & Variables] either by instance or via inheritance 
@@ -32,14 +36,20 @@ can access it members [Methods & Variables] either by instance or via inheritanc
 - If the class is public and members are protected, then any class of different package
 can access it members [Methods & Variables] via inheritance not by instance
 
+> Rule [Constructors]
+- If the class is public and constructor is public, It can be accessed within or outside the package
+- If the class is public and constructor is default, It can be accessed from within the package only
 
 ## Default Class
+- All the class by default are marked as default class
+
+> Rule [Members]
 - If the class is default and members are public, then any class of same package can 
 access it members [Methods & Variables] either by instance or via inheritance
 [** Different package cannot access members]
 
 - If the class is default and members are private, then any class of same or different package 
-cannot access it members [Methods & Variables] either by instance or via inheritance
+cannot access it members [Methods & Variables] neither by instance nor via inheritance
 
 - If the class is default and members are default, then any class of same package
 can access it members [Methods & Variables] either by instance or via inheritance 
@@ -49,22 +59,33 @@ can access it members [Methods & Variables] either by instance or via inheritanc
 can access it members [Methods & Variables] either by instance or via inheritance 
 [** Different package cannot access members]
 
+> Rule [Constructors]
+- If the class is default and constructor is public, It can be accessed within the package only
+- If the class is default and constructor is default, It can be accessed within the package only
+
+## Protected Class
+- We cannot make any parent class directly as 'protected' but it is possible to create using **inner classes**
+
+> Rule [Members]
+- If the class is public / default and members are protected, then any class of same package or different package
+can access it members [Methods & Variables] either by instance [same pacake] or via inheritance
+
+> Rule [Constructors]
+- If the class is public and constructor is protected, It can be accessed within the package only
+- If the class is default and constructor is protected, It can be accessed within the package only
 
 ## Private Class
 - We cannot make any parent class directly as 'private' but it is possible to create using **inner classes**
 
-> Advantage
-- It provides security
+> Rule [Members]
+- If the class is public / default and members are private, then any class of same package or different package
+cannot access it members [Methods & Variables] neither by instance nor via inheritance 
 
-> Private Methods
-- If the method is declared as private, it cannot be access outside the class
-- It doesnt work with abstract but can work with static & final
-- It can be used for maintaining some secret information
+> Rule [Constructors]
+- If the class is public and constructor is private, It can be accessed within the class only
+- If the class is default and constructor is private, It can be accessed within the class only
 
-> Private Variables
-- If the variable is declared as private, it cannot be access outside the class
-- It prevents modification of data by different objects
-- It can be declared as constants useful for defining environment variables
+<br>
 
 # Non Access Modifiers
 - It is applicable on class, methods, variables but not on **constructor**
