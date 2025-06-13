@@ -12,6 +12,19 @@
 - Access Modifiers     - public, protected, private, default
 - Non Access Modifiers - abstract, final, static, strictp
 
+> Instance Methods
+- It can be accessed via object or via inheritance
+- It can be invoked via object reference
+- Example: setters & getters
+
+> Instance Variables
+- It can be accessed via object or via inheritance
+- It will be set to defaults on object creation
+
+> Constructors
+- It can be invoked if default, else needs to be invoked if parameterized
+- In case constructor is not declared, compiler will create one for the class
+
 <br>
 
 # Access Modifiers
@@ -141,6 +154,23 @@ cannot access it members [Methods & Variables] neither by instance nor via inher
 
 > Abstract Variables
 - Variables cannot be marked as abstract
+
+
+## Static Class
+- Parent class cannot be marked as static class
+- Only inner class can create static class
+
+> Static Methods
+- It can be access via Classname
+- If the method is declared as static, it cannot be overridden
+- It can only access static variables
+- It doesnt work with abstract but works with final
+
+> Static Variables
+- It can be access via Classname
+- If the variables is declared as static, it is globally accessible [in combination with public]
+- Mainly used for setting environment variables
+
 
 ## Inner Class
 - It is always used inside another class
