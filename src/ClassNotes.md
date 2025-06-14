@@ -7,6 +7,7 @@
   - private classes can be defined as 'inner class' along with public and default
 - For non access modifiers, parent classes can be marked abstract, final, strictfp but not static
   - static classes can be defined as 'inner class' along with abstract, final
+- They are stored on heap area
  
 > Members classified
 - Access Modifiers     - public, protected, private, default
@@ -159,6 +160,7 @@ cannot access it members [Methods & Variables] neither by instance nor via inher
 ## Static Class
 - Parent class cannot be marked as static class
 - Only inner class can create static class
+- They are stored on method area 
 
 > Static Methods
 - It can be access via Classname
