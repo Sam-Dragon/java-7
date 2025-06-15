@@ -12,7 +12,7 @@
 - interfaces can extend multiple interfaces
 
 > Advantage
-- Extensibility
+- Reusability
 
 > Disadvantage
 - Readability
@@ -49,3 +49,7 @@
 -  It is mainly used in case of inheritance to access members and chain constructors
 -  It must be first line of the constructor but it can be anywhere in members
 -  It can only fail incase the classes are under inheritance but parent constructor is **private**
+
+## Protected 
+- It can be used to access the members of class within the package which acts like its own members
+- It can be used to access the members of class outside the package which acts like its private members
