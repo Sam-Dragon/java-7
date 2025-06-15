@@ -36,16 +36,16 @@
 > Multiple Inheritance
 - It is meant to access features from multiple classes
 - It can be done using class extending multiple class
-- It is **not **supported by java
-- Still, it can be solved via interfaces
+- It is **not** supported by java
+- Still, it can be solved via **interfaces**
 
 
 ## Constructor Chaining
 -  It is the process of chaining the constructors in hierarchy from lower to higher which are under inheritance
 -  It is done via 'super' call and implicitly done by compiler. Still we can declare if we want
--  In case, no class is under inheritance still super call will go to 'object' class
+-  In case, no class is under inheritance still super call will go to '**object**' class
 
-## super
+## Super 
 -  It is mainly used in case of inheritance to access members and chain constructors
 -  It must be first line of the constructor but it can be anywhere in members
--  It can only fail incase the classes are under inheritance but parent constructor is private
+-  It can only fail incase the classes are under inheritance but parent constructor is **private**
