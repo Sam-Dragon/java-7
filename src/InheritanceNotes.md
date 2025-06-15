@@ -1,7 +1,7 @@
 # Inheritance
 
 > Definition
-- It is the oops feature which specifies the feature accessing between classes
+- It is the oops feature which specifies the aquiring feature between classes
 - It is signified with 'extends' (OR) 'implements' keyword
 - It works well with the object level members
 - It can access the features both from classes and interfaces
