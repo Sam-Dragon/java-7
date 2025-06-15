@@ -61,7 +61,7 @@ as parent method is public, & child method is final, depending on object method 
 - @Override is marker annotation which ensures the overridden method signature is same
 even if you don't specify this annotation, method overriding still works
 
-> Rules [PENDING]
+> Rules
 1. Method overriding must have same signature else it will be become overloaded method
 2. Access level - child [overridden method] >= parent level
 3. Checked Exception level - child [overridden method] <= parent level
