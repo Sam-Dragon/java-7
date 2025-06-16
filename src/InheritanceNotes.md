@@ -51,5 +51,32 @@
 -  It can only fail incase the classes are under inheritance but parent constructor is **private**
 
 ## Protected 
-- It can be used to access the members of class within the package which acts like its own members
-- It can be used to access the members of class outside the package which acts like its private members
+-  It can be used to access the members of class within the package which acts like its own members
+-  It can be used to access the members of class outside the package which acts like its private members
+
+## Type Casting
+-  It is process of changing the datatype
+-  cast operator is used for performing type casting
+
+> Types
+- primitive datatypes: process of conversion between primitives and its object type
+- reference datatypes: process of conversion between objects which are under inheritance
+
+> Rule
+- It is applicable for objects only if there are under inheritance
+- In case of primitive types, they will convert between object and primitive type
+- If programmer specify with cast operator for conversion then it must be handled properly as it is error prone, <pr>
+  this process is called narrowing (OR) Explicit casting (OR) specialization
+
+> Widening vs Narrowing
+- Widening is the process of promoting the object to higher types & is done by compiler. Example - int i = 100;
+- Narrowing is the process of demoting the object to lower types & is done by user explicitly. Example - int i = (int) 100.12;
+
+> Implicit vs Explicit Casting
+- Automatic casting done by compiler is called implicit casting, 
+Explicit casting done by the user is called explicit casting
+- Explicit casting is error prone where as implicit is not
+
+> Generalization vs Specialization
+-  Generalization is the process of promoting the classes to higher types
+- specialization is the process of promoting the classes to lower types providiing specific functionality
