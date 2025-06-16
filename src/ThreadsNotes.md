@@ -5,7 +5,9 @@
 - It has its own stack and local variables
 - They are light weight process and can share resources
 - Thread contains [Thread Name, Thread Priority, Thread Group]
-- main thread is the default thread run by main method of java program
+- **main thread** is the default thread run by main method of java program & managed by jvm
+- common exception thrown by threads is **InterruptedException**
+- Threads execution can be both synchronous and asynchronous
 
 > Advantages
 - useful in utilizing cores and provides faster execution
@@ -20,10 +22,10 @@
 
 > Creation
 - It can be created in following ways
-  - extends Thread class
-  - implements Runnable interface
-  - implements Callable interface
-  - Executor service
+  - extends Thread class [NOT RECOMMENDED]
+  - implements Runnable interface [RECOMMENDED]
+  - implements Callable interface [RECOMMENDED]
+  - Executor service [RECOMMENDED]
 
 > Methods
 - currentThread() - gives details of thread
@@ -38,3 +40,9 @@
 - wait(int mills)
 - notify()
 - notifyAll()
+
+> Rule
+- Thread once started cannot be started again else it will give exception [InterruptedException]
+- In multi-threaded environment, make sure exception handling is properly done
+- Use timeout to unblock the threads
+- 
