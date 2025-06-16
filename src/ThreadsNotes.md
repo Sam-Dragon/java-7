@@ -5,6 +5,7 @@
 - It has its own stack and local variables
 - They are light weight process and can share resources
 - Thread contains [Thread Name, Thread Priority, Thread Group]
+- main thread is the default thread run by main method of java program
 
 > Advantages
 - useful in utilizing cores and provides faster execution
