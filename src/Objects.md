@@ -59,3 +59,12 @@
 
 > Rule
 - use clone() method and provide custom implementation [always create new object]
+
+## equals() & hashcode() contract
+-  If two objects are equal using equals() method, then there hashcode() must be same
+-  If two objects are not equal using equals() method, then there hashcode() can be same or different
+
+## Hash Collision
+-  It it the scenario which happens due to poor hashcode implmentation
+-  It can be simply tested by generation same hashvalue for all the objects
+-  It can be resolved by generation unique and long hash value using hash function
