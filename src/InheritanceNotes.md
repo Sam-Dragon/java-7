@@ -63,7 +63,7 @@
 - reference datatypes: process of conversion between objects which are under inheritance
 
 > Rule
-- It is applicable for objects only if there are under inheritance
+- In case of reference types, It is applicable for objects only if they are under inheritance
 - In case of primitive types, they will convert between object and primitive type
 - If programmer specify with cast operator for conversion then it must be handled properly as it is error prone, <pr>
   this process is called narrowing (OR) Explicit casting (OR) specialization
@@ -73,10 +73,9 @@
 - Narrowing is the process of demoting the object to lower types & is done by user explicitly. Example - int i = (int) 100.12;
 
 > Implicit vs Explicit Casting
-- Automatic casting done by compiler is called implicit casting, 
-Explicit casting done by the user is called explicit casting
+- Automatic casting done by compiler is called implicit casting, Explicit casting done by the user is called explicit casting
 - Explicit casting is error prone where as implicit is not
 
 > Generalization vs Specialization
--  Generalization is the process of promoting the classes to higher types
-- specialization is the process of promoting the classes to lower types providiing specific functionality
+- Generalization is the process of promoting the classes to higher types
+- Specialization is the process of promoting the classes to lower types providiing specific functionality
