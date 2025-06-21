@@ -45,4 +45,25 @@
 - Thread once started cannot be started again else it will give exception [InterruptedException]
 - In multi-threaded environment, make sure exception handling is properly done
 - Use timeout to unblock the threads
-- 
+
+> Use cases
+- Image/video processing
+- Scientific simulations
+- Cryptographic calculations
+- Machine learning model training
+- Data compression/encryption
+
+## Thread Priority
+- It speicifies the thread execution based on priority
+- It varies from 1 to 10, 10 being the highest. Default is 5
+- It helps jvm to pick the threads and execute accordingly
+
+## Thread Group
+- Every thread is assigned to a group. Each group can contain many threads
+- Thread groups helps to specify how many threads are allocated for an operation
+
+> Good Practice
+- Always customize the thread name so it is useful during debugging
+- Make sure threads count must be equal to cores, beyond this abrupt behavior can be expected
+- Use standard frameworks to avoid basic issues w.r.t threads as it reduces probability of issues
+- Timeouts and finally block is used for unhookinh a thread
