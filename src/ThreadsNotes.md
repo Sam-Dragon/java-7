@@ -35,6 +35,7 @@
   It doesnt release any lock hold by thread
 - setName(String name) & getName() - set the custom thread name & gets the custom thread name
 - stop() - stopping the thread abnormally [NOT RECOMMENDED]
+- join() - joins the thread allowing squencial execution
 
 > Object Methods
 - wait(int mills) - waits for notification which is expected from notify or notifyAll()
