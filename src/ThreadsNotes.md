@@ -37,9 +37,9 @@
 - stop() - stopping the thread abnormally [NOT RECOMMENDED]
 
 > Object Methods
-- wait(int mills)
-- notify()
-- notifyAll()
+- wait(int mills) - waits for notification which is expected from notify or notifyAll()
+- notify() - wakes up single thread
+- notifyAll() - wakes up all the threads
 
 > Rule
 - Thread once started cannot be started again else it will give exception [InterruptedException]
@@ -61,6 +61,29 @@
 ## Thread Group
 - Every thread is assigned to a group. Each group can contain many threads
 - Thread groups helps to specify how many threads are allocated for an operation
+
+## Thread Pool
+
+
+## Synchronization
+- It is the process in which single thread will be allowed to executed a task by aquiring lock in multi-threaded environment
+- It degrades performance as all threads will wait for lock
+- It can be done via synchronous block (OR) via synchronous method
+
+> Synchronous Block
+- It is used to synchronize the object inside the method, allowing some control statments to execute
+- It is preferred as thread can perform some statments execution in multi-threaded environment
+- It is provided with sync(Object obj) { .... }
+
+> Synchronous Method
+- It is used to synchronize the object declared at method level
+- It is not preferred as threads needs to wait for lock 
+- It is provided with public synchronized void method (Object obj) { .... }
+- They are used in collections method such as Collections.synchronizedList(collection), Collections.synchronizedSet(collection), Collections.synchronizedMap(collection)
+
+## Locks
+- It is used by the thread for aquiring the object to perform some operations
+- It can be done using synchronization blocks (OR) synchronization methods 
 
 > Good Practice
 - Always customize the thread name so it is useful during debugging
