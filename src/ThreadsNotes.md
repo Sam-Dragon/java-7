@@ -62,9 +62,24 @@
 ## Thread Group
 - Every thread is assigned to a group. Each group can contain many threads
 - Thread groups helps to specify how many threads are allocated for an operation
+- It contains indenpendent execution of tasks
+- Threads in group doesnt require any communication
+- It consumes more memory and can result in crashes
 
 ## Thread Pool
+- It is the concept which creates a pool of working threads
+- It contains limited number of threads and will be reused in pool
+- It requires thread communication for task execution
+- It consumes less memory as it has fixed set of threads & are reused
+- It is the effective way of using threads for tasks
 
+### Types of Pools
+- There are five types of pools which can be used
+  - Single Thread Executor:
+  - Single Thread Scheduled Thread pool:
+  - Fixed Thread Pool: 
+  - Cached Thread Pool:
+  - Schedule Thread Pool:  
 
 ## Synchronization
 - It is the process in which single thread will be allowed to executed a task by aquiring lock in multi-threaded environment
