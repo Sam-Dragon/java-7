@@ -106,3 +106,10 @@
 - Make sure threads count must be equal to cores, beyond this abrupt behavior can be expected
 - Use standard frameworks to avoid basic issues w.r.t threads as it reduces probability of issues
 - Timeouts and finally block is used for unhookinh a thread
+
+## Thread Communication
+- It is process in which threads communicate with each other
+- It uses wait(), notify() and notifyAll() methods of object
+- It must be used under **synchronization**
+- It must have **shared resource** for processing
+- It is example of producer-consumer problem
