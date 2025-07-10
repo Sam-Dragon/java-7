@@ -54,7 +54,8 @@
 - Machine learning model training
 - Data compression/encryption
 
-## Thread Priority
+## Thread Priorities
+- when the jvm scheduler runs, it will execute threads based on priority  
 - It speicifies the thread execution based on priority
 - It varies from 1 to 10, 10 being the highest. Default is 5
 - It helps jvm to pick the threads and execute accordingly
@@ -107,9 +108,28 @@
 - Use standard frameworks to avoid basic issues w.r.t threads as it reduces probability of issues
 - Timeouts and finally block is used for unhookinh a thread
 
+## Deadlock
+- Deadlock is a process in which threads lock each other waiting forever, it happens in mutli-threaded enviroment while threads works with resource with sync block or methods <br>
+- It can occur if the two threads waits for each other to release the resource <br>
+> Steps: 
+- Its generally happens through bad design, it can be corrected at code level
+- Avoid nested locks, unncessary locks & also from thread.join() method <br>
+> Disadvantages: 
+- It can run the memory out
+- system will hang and slowness can be observed
+
 ## Thread Communication
 - It is process in which threads communicate with each other
 - It uses wait(), notify() and notifyAll() methods of object
 - It must be used under **synchronization**
 - It must have **shared resource** for processing
 - It is example of producer-consumer problem
+
+> Rule
+- Ensure the code is synchronized
+- Ensure there must be object which is shared
+
+## Daemon Threads
+- Threads which are not created by user and runs forever. [system threads]
+- They are useful for running background process. lets say - updating service package, database service
+- isDeamon() of thread method helps in indicating whether it is normal or deamon thread
