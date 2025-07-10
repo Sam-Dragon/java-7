@@ -115,7 +115,7 @@
     - StampedLock   : Introduced in Java 8, StampedLock offers three modes: writing, reading, and optimistic reading. It                          provides a more fine-grained control over locking and can offer better performance in read-heavy                            scenarios compared to ReadWriteLock by allowing optimistic reads that don't block writers<br>
 
 > Synchronization Aids
-> - While not strictly "locks" in the same sense as the above, these mechanisms also help manage                                concurrency
+- While not strictly "locks" in the same sense as the above, these mechanisms also help manage                                concurrency
     - Semaphore: A signaling mechanism that controls access to a limited number of resources. It maintains a count of                        available permits, and threads acquire a permit to access the resource and release it when done.
     - CountDownLatch: A synchronization aid that allows one or more threads to wait until a set of operations being                               performed in other threads completes. It works like a gate that remains closed until a counter                              reaches zero.
     - Cyclic Barrier: A synchronization aid that allows one or more threads to wait until a set of operations being                               performed in other threads completes. similar to countdown latch but threads are reusable.
