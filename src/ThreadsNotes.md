@@ -62,24 +62,24 @@
 ## Thread Group
 - Every thread is assigned to a group. Each group can contain many threads
 - Thread groups helps to specify how many threads are allocated for an operation
-- It contains indenpendent execution of tasks
+- Each thread works on independent task
 - Threads in group doesnt require any communication
 - It consumes more memory and can result in crashes
 
 ## Thread Pool
 - It is the concept which creates a pool of working threads
 - It contains limited number of threads and will be reused in pool
-- It requires thread communication for task execution
+- It requires communication between threads for task execution
 - It consumes less memory as it has fixed set of threads & are reused
 - It is the effective way of using threads for tasks
 
 ### Types of Pools
 - There are five types of pools which can be used
-  - Single Thread Executor:
-  - Single Thread Scheduled Thread pool:
-  - Fixed Thread Pool: 
-  - Cached Thread Pool:
-  - Schedule Thread Pool:  
+  - Single Thread Executor: It just contains only one thread & executes task sequencially. Example - Any Program
+  - Single Thread Scheduled Thread pool: It contains only one Thread & useful for scheduling future tasks. Example - Payment
+  - Fixed Thread Pool:  It contains fixed number of threads and executes tasks parallely
+  - Cached Thread Pool: It contains multiple threads provided and executes tasks and waits till 1min before thrashing and                            then new threads will be created
+  - Schedule Thread Pool: It contains multiple threads provided and executes future tasks and waits till 1min before                                   thrashing and then new threads will be created
 
 ## Synchronization
 - It is the process in which single thread will be allowed to executed a task by aquiring lock in multi-threaded environment
@@ -95,7 +95,7 @@
 - It is used to synchronize the object declared at method level
 - It is not preferred as threads needs to wait for lock 
 - It is provided with public synchronized void method (Object obj) { .... }
-- They are used in collections method such as Collections.synchronizedList(collection), Collections.synchronizedSet(collection), Collections.synchronizedMap(collection)
+- They are used in collections method such as Collections.synchronizedList(collection),   Collections.synchronizedSet(collection), Collections.synchronizedMap(collection)
 
 ## Locks
 - It is used by the thread for aquiring the object to perform some operations
