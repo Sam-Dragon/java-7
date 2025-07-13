@@ -55,6 +55,10 @@
 - Now the safe way to do this is by using a stop flag which is boolean
 - We can also do using Thread.interrupt().isInterrupted() flag
 
+> Keywords
+- volatile
+- AtomicClass
+
 > Methods
 - currentThread() - gives details of thread
 - start() - starts a new thread execution
