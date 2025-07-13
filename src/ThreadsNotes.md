@@ -25,7 +25,30 @@
   - extends Thread class [NOT RECOMMENDED]
   - implements Runnable interface [RECOMMENDED]
   - implements Callable interface [RECOMMENDED]
-  - Executor service [RECOMMENDED]
+  - Executor service [RECOMMENDED] 
+
+  ### Thread Class 
+  - It is used for creating a thread object by directly extend to it
+  - It limits base class to extend futher more
+  - It doesnt return anything
+ 
+  ### Runnable Interface 
+  - It is used for creating a thread object by providing implementation for it
+  - It allows class to extend further
+  - As it is an interface, we need to create object of it and pass to thread instance as argument
+  - It doesnt return anything
+ 
+  ### Callable Interface 
+  - It is used for creating a thread object by providing implementation for it
+  - It allows class to extend further
+  - As it is an interface, we need to create object of it and pass to thread instance as argument
+  - It is useful in return values or future result
+  - It will use java "Future" or "FutureTask" for retriving results
+ 
+  ### Executor Service
+  - It already has working threads and we need to pass implmentation to it via Runnable or Callable
+  - It is useful in return values or future result for callable
+  - It will use java "Future" or "FutureTask" for retriving results for callable 
 
 > Methods
 - currentThread() - gives details of thread
