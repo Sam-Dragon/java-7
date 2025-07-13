@@ -50,6 +50,11 @@
   - It is useful in return values or future result for callable
   - It will use java "Future" or "FutureTask" for retriving results for callable 
 
+> Termination
+- It can be done via stop() method but is "**Deprecated**"
+- Now the safe way to do this is by using a stop flag which is boolean
+- We can also do using Thread.interrupt().isInterrupted() flag
+
 > Methods
 - currentThread() - gives details of thread
 - start() - starts a new thread execution
@@ -65,10 +70,8 @@
 - notify() - wakes up single thread
 - notifyAll() - wakes up all the threads
 
-> Rule
+> Notes
 - Thread once started cannot be started again else it will give exception [InterruptedException]
-- In multi-threaded environment, make sure exception handling is properly done
-- Use timeout to unblock the threads
 
 > Use cases
 - Image/video processing
@@ -78,7 +81,7 @@
 - Data compression/encryption
 
 ## Thread Priorities
-- when the jvm scheduler runs, it will execute threads based on priority  
+- When the jvm scheduler runs, it will execute threads based on priority  
 - It speicifies the thread execution based on priority
 - It varies from 1 to 10, 10 being the highest. Default is 5
 - It helps jvm to pick the threads and execute accordingly
@@ -180,3 +183,9 @@
 - Runnable - When the thread is ready to run [yeild(), notify(), notifyAll() method]
 - Not-Runnable - When the thread is blocked/waited [sleep(), wait(), IO Block method] 
 - Terminate - When the thread is killed [stop() method (OR) run method finishes] 
+
+## Best Practices
+- Try to use executor service for thread based programs
+- All the executions must have proper exception handling done
+- Try to put timeouts for each operations to avoid long waiting or deadlocks
+- Avoid direct synchronization of object rather look for alternatives
