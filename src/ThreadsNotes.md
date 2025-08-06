@@ -188,6 +188,9 @@
 - Not-Runnable - When the thread is blocked/waited [sleep(), wait(), IO Block method] 
 - Terminate - When the thread is killed [stop() method (OR) run method finishes] 
 
+## Volatile Keyword
+- To share the data between the threads, volatile keyword is used
+
 ## Best Practices
 - Try to use executor service for thread based programs
 - All the executions must have proper exception handling done
