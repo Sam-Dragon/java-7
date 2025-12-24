@@ -6,8 +6,8 @@
 ## Array
 - It is present in java.lang
 - It is a not a final class i.e. it can be inherited
-- It are user-defined datatype
-- It are not immutable in java. i.e. the object can be modified. <br>
+- They are user-defined datatype
+- They are not immutable in java. i.e. the object can be modified. <br>
 - It is index based, all operations needs to be performed via index only <br>
 - It is not thread-safe by nature. 
 - "CopyOnWriteArrayList", Atomic Arrays is used for thread-safe operations
