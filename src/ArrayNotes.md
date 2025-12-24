@@ -1,4 +1,6 @@
 # Arrays
+- It represents grouping of elements with same data type
+- They are objects and are stored on heap
 - Mainly used for storing collection of data 
 
 ## Array
