@@ -6,4 +6,5 @@ public class CovarientReturnTypeMethodOverriding_Parent {
 		System.out.println("Parent Return Type Covariant Type");
 		return new CovarientReturnTypeMethodOverriding_Parent();
 	}
+
 }

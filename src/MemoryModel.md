@@ -6,11 +6,11 @@
 - Memory Leaks
 
 ## Memory Leaks
-- Its basically the failure of unallocation of dereferenced objects
+- Its basically the failure of de-allocation of dereferenced objects
 - It happens due to
   - Use of Statics
   - Unclosed Resources
-  - Improper equals() & hascode() methods
+  - Improper equals() & hashcode() methods
   - Excessive session objects
   - poorly written custom data-structure code
  

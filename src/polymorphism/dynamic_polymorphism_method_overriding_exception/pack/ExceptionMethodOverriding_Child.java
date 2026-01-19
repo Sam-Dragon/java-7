@@ -9,7 +9,7 @@ public class ExceptionMethodOverriding_Child extends ExceptionMethodOverriding_P
 		System.out.println("Child Exception");
 	}
 
-	// Access of child must be greater than or equal to parent
+	// Exception of child must be less than or equal to parent
 	// public void display() throws IOException {
 	// public void display() throws Exception {
 }

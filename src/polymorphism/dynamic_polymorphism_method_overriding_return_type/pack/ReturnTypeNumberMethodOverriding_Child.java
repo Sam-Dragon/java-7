@@ -8,5 +8,5 @@ public class ReturnTypeNumberMethodOverriding_Child extends ReturnTypeNumberMeth
 		return 100L;
 	}
 
-	// Access of child must be less than or equal to parent
+	// Return Type of child must be less than or equal to parent
 }
