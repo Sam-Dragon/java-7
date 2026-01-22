@@ -56,20 +56,28 @@
 - It is the process of copying the object, modifications are **accepted** between cloned and actual object
 - It can be done by using default clone method
 - It requires less memory, faster, copies references, dependent on actual object
+- It is useful when nested objects are immutable and increase performance
+- Not recommended for multithreaded application as it has mutable state
 
 > Rule
 
-- use default clone() method
+- use default clone() method and calls super method
 
 ### Deep Cloning
 
 - It is the process of copying the object, modifications are **rejected** between cloned and actual object
 - It can be done by copying content into completely new object. custom implementation is required
 - It requires more memory, slower, create new copies of references, independent of actual object
+- It requires clone() method to be **explicitly** handled all the other classes used
+- It is useful in multithreaded code and also in DTOs, caching, messaging
 
 > Rule
 
-- use clone() method and provide custom implementation [always create new object]
+- use clone() method for main object and provide custom implementation for clone method parent and other classes
+  used [always create new object]
+
+~ NOTE: To avoid cloning problems, we can use copy constructor, factory methods, DTO Mapping and best is immutable
+objects
 
 ## equals() & hashcode() contract
 
