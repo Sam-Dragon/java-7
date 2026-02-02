@@ -33,29 +33,33 @@
     - implements Callable interface [RECOMMENDED]
     - Executor service [RECOMMENDED]
 
-  ### Thread Class
-    - It is used for creating a thread object by directly extend to it
-    - It limits base class to extend further more
-    - It doesn't return anything
-    - It doesn't force caller to override default implementation method
+### Thread Class
 
-  ### Runnable Interface
-    - It is used for creating a thread object by providing implementation for it
-    - It allows class to extend further
-    - As it is an interface, we need to create object of it and pass to thread instance as argument
-    - It doesn't return anything
+- It is used for creating a thread object by directly extend to it
+- It limits base class to extend further more
+- It doesn't return anything
+- It doesn't force caller to override default implementation method
 
-  ### Callable Interface
-    - It is used for creating a thread object by providing implementation for it
-    - It allows class to extend further
-    - As it is an interface, we need to create object of it and pass to thread instance as argument
-    - It is useful in return values or future result
-    - It will use java "Future" or "FutureTask" for retrieving results
+### Runnable Interface
 
-  ### Executor Service
-    - It already has working threads, and we need to pass implementation to it via Runnable or Callable
-    - It is useful in return values or future result for callable
-    - It will use java "Future" or "FutureTask" for retrieving results for callable
+- It is used for creating a thread object by providing implementation for it
+- It allows class to extend further
+- As it is an interface, we need to create object of it and pass to thread instance as argument
+- It doesn't return anything
+
+### Callable Interface
+
+- It is used for creating a thread object by providing implementation for it
+- It allows class to extend further
+- As it is an interface, we need to create object of it and pass to thread instance as argument
+- It is useful in return values or future result
+- It will use java "Future" or "FutureTask" for retrieving results
+
+### Executor Service
+
+- It already has working threads, and we need to pass implementation to it via Runnable or Callable
+- It is useful in return values or future result for callable
+- It will use java "Future" or "FutureTask" for retrieving results for callable
 
 > Termination
 
